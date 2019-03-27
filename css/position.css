@@ -1,0 +1,439 @@
+/**
+
+ * @author ( Angie Radtke )
+ * @package Joomla
+ * @subpackage Accessible-Template-Beez
+ * @copyright Copyright (C) 2005 - 2019 Open Source Matters. All rights reserved.
+ * @license GNU/GPL, see LICENSE.php
+ * Joomla! is free software. This version may have been modified pursuant to the
+ * GNU General Public License, and as distributed it includes or is derivative
+ * of works licensed under the GNU General Public License or other free or open
+ * source software licenses. See COPYRIGHT.php for copyright notices and
+ * details.
+ */
+
+
+
+
+
+
+
+
+
+html,
+body,
+body div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html {
+    background: #fff;
+    font-size: 1.1em;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: #f3f5f6;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+
+    position: relative;
+    width: 100%;
+    text-rendering: optimizelegibility;
+}
+
+
+.container {
+    max-width:var(--conatiner-max-width);
+    margin:0 auto;
+
+}
+/* ###################### general ###################### */
+#all {
+    margin: 0 auto;
+    max-width: 100%
+    padding: 0;
+    text-align: left;
+    font-size: 0.8em
+}
+
+#header {
+
+    position: relative;
+    overflow: hidden;
+}
+
+#contentarea {
+
+    margin: 0;
+    display: flex;
+
+}
+
+
+#main {
+
+    flex: 1 1 auto;
+}
+
+#right {
+    flex: 1 0 280px;
+    border: solid 1px;
+    padding:30px;
+    position: relative;
+}
+
+.unseen,
+.hidelabeltxt,
+#line label {
+    display: inline;
+    height: 0;
+    left: -3000px;
+    position: absolute;
+    top: -2000px;
+    width: 0;
+}
+
+
+/* ###################### header ###################### */
+
+.skiplinks,
+.skiplinks li {
+    display: inline;
+    height: 0;
+    line-height: 0;
+    padding: 0 !important;
+}
+
+.skiplinks li a.u2 {
+    display: inline;
+    height: 0;
+    left: -3000px;
+    position: absolute;
+    top: -2000px;
+    width: 0;
+
+}
+
+.skiplinks li a.u2:active,
+.skiplinks li a.u2:focus {
+    position: absolute;
+    width: 13em;
+    top: -4em;
+    left: 10px;
+    line-height: 1.5em;
+    padding: 5px;
+    font-weight: bold;
+    height: 3em;
+
+}
+
+
+#logo {
+
+    display: inline-block;
+    padding: 1em 20px 20px 10px;
+    width: 425px;
+    font-weight: normal;
+    line-height: 1em;
+    color: var(--header-color);
+    flex: 1 1 auto
+
+}
+
+#logo img {
+    display: block;
+}
+
+#logo span {
+    padding-left: 2px
+}
+
+#logo span.header1 {
+    display: block;
+    top: 0;
+    line-height: 0.8em;
+    font-size: 0.7em;
+
+}
+
+.logoheader {
+
+    padding: 0;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1.5em;
+}
+
+.header1 {
+    font-size: 1.5em;
+
+}
+
+#line {
+    padding: 5px 0 2px 2px;
+    position: absolute;
+    right: 10px;
+    top: 0.5em;
+    max-width: 40em;
+    text-align: right;
+    min-width: 40em
+
+}
+
+#line .search {
+    display: inline;
+    margin: 0;
+}
+
+/* ###################### main ###################### */
+
+/* ++++++++++++++  position  ++++++++++++++ */
+
+.blog-featured {
+    padding: 0;
+}
+
+
+.row-separator {
+    display: block;
+    clear: both;
+    margin: 0;
+    border: 0;
+    height: 1px
+}
+
+.item-separator {
+    display: none;
+    margin: 0;
+}
+
+.shownocolumns {
+    width: 100% !important;
+}
+
+#top {
+    margin: 0 0 20px 0;
+    overflow: hidden
+}
+
+/* ++++++++++++++  blog  ++++++++++++++ */
+
+.items-leading {
+    padding: 4vh 5px  4vh 5px;
+    overflow: hidden;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+
+.intro-items {   padding: 4vh 5px  4vh 5px; background:#ddd }
+.row  {display:flex; flex-wrap:wrap; width:100%;  align-items: stretch}
+
+.col-1 {
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%
+}
+
+.col-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%
+}
+
+.blog-col-3 article {
+    flex: 0 0 25%;
+    flex:1 1 calc(25% - 20px);
+    margin:10px;;
+    background:#fff;
+    padding: 2vw;
+    box-sizing: border-box;
+    box-shadow:0 0 1rem rgba(0,0,0,0.15) !important
+
+
+}
+
+
+
+
+.blog-col-4 article {
+    flex:1 1 calc(33.3333% - 20px);
+    margin:10px;
+    align-content: stretch;
+    min-width:280px;
+    background:#fff;
+    padding: 2vw;
+    box-sizing: border-box;
+    box-shadow:0 0 1rem rgba(0,0,0,0.15) !important
+
+
+
+}
+
+.col-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%
+}
+
+.blog-col-6  article {
+    flex:1 1 calc(50% - 20px);
+    margin:10px;
+    align-content: stretch;
+    min-width:280px;
+    background:#ddd;
+    padding: 2vw;
+    box-sizing: border-box
+
+
+
+
+
+}
+
+.col-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%
+}
+
+.col-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%
+}
+
+.col-9 {
+    flex: 0 0 75%;
+    max-width: 75%
+}
+
+.col-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%
+}
+
+.col-11 {
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%
+}
+
+.blog-more {
+    padding: 10px 5px
+}
+
+
+
+
+
+.item-page {margin:0 auto; max-width:960px}
+
+/* ++++++++++++++  footer  ++++++++++++++ */
+
+#bottom {
+    overflow: hidden
+}
+
+.box {
+    width: 27%;
+    float: left;
+    margin-right: 10px;
+    min-height: 100px
+}
+
+.box1 {
+    width: 35%
+}
+
+.box2 {
+    width: 32%
+}
+
+.box3 {
+    float: right
+}
+
+#footer-inner, #footer {
+
+    margin: 0 auto;
+
+    padding: 10px 15px 10px 10px;
+}
+
+img {
+    border: 0 none;
+    max-width: 100%;
+}
+
+/* hide the mobile menu button */
+#mobile_select {
+    display: none
+}

@@ -1,0 +1,18 @@
+:root {
+        --font-primary: #555;
+    --font: PTRootlight;
+    --background: #eee;
+    --linkcolor: #cc0000;
+    --baseheading-color:#000;
+    --font:arial,sans-serif;
+    --content-base-bg: #fff;
+    --header-bg:#cc0000;
+    --header-color:#fff;
+    --gardiento:#cc0000;
+    --button-bg:#cc0000;
+    --button-color:#fff;
+
+    /* flexbox-grid */
+
+    --conatiner-max-width :1400px
+}
